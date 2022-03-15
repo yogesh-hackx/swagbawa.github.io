@@ -1,0 +1,256 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Roboto;
+}
+header{
+  position: fixed;
+  width: 100%;
+  transition: all 400ms ease-in-out;
+  z-index: 100;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  height: 70px;
+}
+header nav .logo{
+  width: 50px;
+  margin-left: 20px;
+}
+header nav .logo img{
+  width: 100%;
+}
+header nav .navbar{
+  color: white;
+}
+header nav .navbar a{
+  text-decoration: none;
+  padding: 0px 10px;
+  font-size: 1.1rem;
+  color: inherit;
+}
+header nav .navbar a:last-child{
+  color: #CC0000;
+  border: 1px solid gray;
+  padding: 10px;
+  margin-right: 20px;
+}
+header nav .navbar a:last-child:hover{
+  color: white;
+  background-color: #CC0000;
+  border-color: #CC0000;
+}
+header nav .navbar a:hover{
+  color: #CC0000;
+}
+.hero{
+  height: 75vh;
+  background: linear-gradient(rgba(0,0,0, 0.9), rgba(255, 255, 255, 0.1) 80%, rgba(0,0,0, 0.5)), url('./assets/peakpx.jpg');
+  background-size:  cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 90px;
+  position: relative;
+}
+.hero .sub-container{
+  position: absolute;
+  width: 1200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.hero .sub-container h1{
+  color: white;
+  font-size: 3.4rem;
+  margin: 0px;
+}
+.hero .sub-container p{
+  color: white;
+  font-size: 1.2rem;
+}
+.hero .sub-container button{
+  border: none;
+  outline: none;
+  padding: 15px;
+  background-color: #CC0000;
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.hero .sub-container button:hover{
+  transform: scale(1.05);
+}
+@media screen and (max-width: 1200px) {
+  .hero .sub-container{
+    width: fit-content;
+  }
+}
+
+
+.about-us-section{
+  max-width: 1200px;
+  margin: auto;
+}
+.about-us-section h1{
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.4rem;
+  margin-top: 70px;
+  color: #CC0000;
+}
+.about-us-section p{
+  text-align: justify;
+  color: #6F6F6F;
+  font-family: Karla;
+  font-size: 1.4rem;
+  text-indent: 120px;
+  padding: 0px 40px;
+}
+
+.services-section{
+  background-color: rgba(240, 240, 240, 1) ;
+}
+.services-section > div{
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.services-section > div h1 {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.4rem;
+  margin-top: 70px;
+  color: black;
+  margin-bottom: 0px;
+}
+.services-section > div > h2{
+  color: #CC0000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  position: relative;
+}
+.services-section > div > h2::after{
+  content: '';
+  position: absolute;
+  height: 5px;
+  border-radius: 2.5px;
+  width: 100px;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  background-color: #CC0000;
+}
+.services-section .services-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.services-section .services-list .service-list-item {
+  display: flex;
+  margin: 5px;
+  background-color: white;
+  padding: 10px;
+  transition: all 200ms ease-in-out;
+}
+.services-section .services-list .service-list-item .image-container{
+  width: 100px;
+  margin-right: 20px;
+  margin-top: 40px;
+  transition: all 200ms ease-in-out;
+}
+.services-section .services-list .service-list-item .image-container img{
+  width: 100%;
+}
+.services-section .services-list .service-list-item h2{
+  color: #CC0000;
+  font-family: Poppins;
+  margin: 0px;
+  margin-top: 20px;
+}
+.services-section .services-list .service-list-item h3{
+  margin: 0px;
+}
+.services-section .services-list .service-list-item p {
+  color: #6F6F6F;
+  font-family: Karla;
+  font-size: 0.9rem;
+}
+.services-section .services-list .service-list-item button{
+  outline: none;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  padding: 0px;
+  color: white;
+  visibility: hidden;
+}
+.services-section .services-list .service-list-item button::after{
+  content: url('./assets/arrow.svg');
+  position: absolute;
+  top: -0.25px;
+  right: -16px;
+  transition: all 200ms ease-in-out;
+}
+.services-section .services-list .service-list-item:hover{
+  background-color: #1476F2;
+}
+.services-section .services-list .service-list-item:hover .image-container{
+  transform: scale(1.1);
+}
+.services-section .services-list .service-list-item:hover .image-container img{
+  filter: invert(100%) sepia(1) saturate(55) hue-rotate(175deg);
+}
+.services-section .services-list .service-list-item:hover h2{
+  color: white;
+}
+.services-section .services-list .service-list-item:hover h3{
+  color: white;
+}
+.services-section .services-list .service-list-item:hover button{
+  visibility: visible;
+}
+.services-section .services-list .service-list-item:hover p{
+  color: white;
+}
+.services-section .services-list .service-list-item:hover button::after{
+  right: -22px;
+}
+@media screen and (max-width: 800px){
+  .services-section .services-list{
+    grid-template-columns:  repeat(1, 1fr);
+    width: 400px;
+    margin: 10px auto;
+  }
+}
+
+
+.clients h1{
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.4rem;
+  margin-top: 70px;
+  color: black;
+  margin-bottom: 0px;
+}
+.clients .clients-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.clients .clients-list div{
+  height: 100px;
+  margin: 14px;
+}
+.clients .clients-list div img{
+  height: 100%;
+}
