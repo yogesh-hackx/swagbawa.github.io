@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
   <title>PV Home</title>
 </head>
 <body>
@@ -53,7 +54,8 @@
     </div>
   </section>
   <section class="services-section">
-    <div>
+    <div id="tsparticles"></div>
+    <div class="sub-container">
       <h1>WHAT WE OFFER</h1>
       <h2>SERVICES</h2>
       <div class="services-list">
@@ -95,6 +97,64 @@
       <div><img src="./assets/karma-logo-new 1.png" alt="image" /></div>
     </div>
   </section>
+  <section class="contact-us">
+    <div class="sub-container">
+      <div class="form-container">
+        <h2>Contact Me</h2>
+        <form>
+          <div class="input-contain">
+            <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+            <label class="placeholder-text" for="fname" id="placeholder-fname">
+                <div class="text">First Name*</div>
+            </label>
+          </div>
+          <div class="input-contain">
+            <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+            <label class="placeholder-text" for="fname" id="placeholder-fname">
+                <div class="text">Last Name*</div>
+            </label>
+          </div>
+          <div class="input-contain">
+            <input type="email" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+            <label class="placeholder-text" for="fname" id="placeholder-fname">
+                <div class="text">Email Address*</div>
+            </label>
+          </div>
+          <div class="input-contain">
+            <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+            <label class="placeholder-text" for="fname" id="placeholder-fname">
+                <div class="text">Contact Number*</div>
+            </label>
+          </div>
+          <div class="input-contain">
+            <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
+            <label class="placeholder-text" for="fname" id="placeholder-fname">
+                <div class="text">Company*</div>
+            </label>
+          </div>
+          <div class="form-group full text-area-contain">
+            <textarea maxlength="255" id="cancellationNotes"name="cancellationNotes"></textarea>
+            <label>How We Can Help You?</label>
+          </div>
+          <p>By sending this form I confirm that I have read and accept Intellectsoft <a href="#">Privacy Policy</a></p>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+      <div class="info">
+        <h1>What Happen Next?</h1>
+        <ol>
+          <li>Our sales manager reaches you out within a few days after analyzing your business requirements</li>
+          <li>Meanwhile, we sign an NDA to ensure the highest privacy level</li>
+          <li>Our pre-sale manager presents project estimates and approximate timeline</li>
+        </ol>
+      </div>
+    </div>
+  </section>
 </body>
-<script src="index.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
+    integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
 </html>

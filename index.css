@@ -115,15 +115,23 @@ header nav .navbar a:hover{
 }
 
 .services-section{
-  background-color: rgba(240, 240, 240, 1) ;
+  background-color: transparent ;
+  position: relative;
 }
-.services-section > div{
+.services-section > div:first-child{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+}
+.services-section .sub-container{
   max-width: 1200px;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 100px;
+  z-index: 100;
 }
-.services-section > div h1 {
+.services-section .sub-container h1 {
   text-align: center;
   font-family: Poppins;
   font-size: 2.4rem;
@@ -131,14 +139,14 @@ header nav .navbar a:hover{
   color: black;
   margin-bottom: 0px;
 }
-.services-section > div > h2{
+.services-section .sub-container > h2{
   color: #CC0000;
   text-align: center;
   font-family: Poppins;
   font-size: 1.8rem;
   position: relative;
 }
-.services-section > div > h2::after{
+.services-section .sub-container > h2::after{
   content: '';
   position: absolute;
   height: 5px;
@@ -253,4 +261,188 @@ header nav .navbar a:hover{
 }
 .clients .clients-list div img{
   height: 100%;
+}
+.contact-us{
+  margin: 40px 0px;
+  background:  url('./assets/pexels-pixabay-434337.jpg');
+  background-position: center;
+  margin-bottom: 300px;
+
+}
+.contact-us .sub-container{
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  top: 250px;
+}
+.contact-us .form-container{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 45%;
+  background-color: white;
+}
+.contact-us .form-container h2{
+  font-size: 2.1rem;
+  font-family: 'Source Sans Pro';
+  letter-spacing: 2px;
+}
+.input-contain{
+  position: relative;
+  margin-bottom: 20px;
+}
+.input-contain input{
+  box-sizing: border-box;
+  height: 35px;
+  width: 100%;
+  border: 1px solid #b0b0b0;
+  border-radius: 3px;
+}
+.input-contain input:focus{
+  outline: none;
+  border-color: #1476F2;
+}
+.input-contain input:focus + .placeholder-text .text, :not(input[value=""]) + .placeholder-text .text{
+  background-color: white;
+  font-size: 0.8rem;
+  color: grey;
+  transform: translate(0, -130%);
+  font-family: Roboto;
+}
+.input-contain input:focus + .placeholder-text .text{
+  border-color: #1476F2;
+  color: #1476F2;
+}
+.input-contain .placeholder-text{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 3px solid transparent;
+  background-color: transparent;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+.input-contain .text{
+  font-size: .9rem;
+  padding: 0 2px;
+  background-color: transparent;
+  transform: translate(0);
+  color: #b0b0b0;
+  transition: transform 0.15s ease-out, font-size 0.15s ease-out, background-color 0.2s ease-out, color 0.15s ease-out;
+}
+.input-contain input, .placeholder-text{
+  font-size: 1.1rem;
+  padding: 0 10px;
+}
+.contact-us .form-container p{
+  font-size: 0.7rem;
+  color: #6F6F6F;
+}
+.contact-us .form-container button{
+  padding: 10px 42px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: Roboto;
+  color: white;
+  background-color: #CC0000;
+  float: right;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+
+}
+.text-area-contain {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+.text-area-contain label {
+  position: absolute;
+  top: -6px;
+  left: 7px;
+  padding: 0.9rem 0;
+  pointer-events: none;
+  transition: all 0.15s ease;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+}
+.text-area-contain textarea {
+  background-color: transparent;
+  padding: 0.875rem 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  border: 0;
+  border: 1px solid #b0b0b0;
+  width: 100%;
+  border-radius: 4px;
+  min-height: 7rem;
+  resize: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.text-area-contain textarea:focus, .text-area-contain textarea.not-empty {
+  outline: 0;
+  border: 1px solid #1476F2;
+}
+.text-area-contain textarea:focus ~ label, .text-area-contain textarea.not-empty ~ label {
+  font-size: 0.7rem;
+  color: #1476F2;
+  top: -1.25rem;
+  transition: all 0.15s ease;
+  background: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+}
+
+.contact-us .info{
+  background-color: #CC0000;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 325px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-us .info h1{
+  color: white;
+  font-size: 1.7rem;
+  font-family: 'Source Sans Pro';
+  letter-spacing: 1px;
+}
+.contact-us .info ol{
+  list-style: none;
+}
+.contact-us .info ol li{
+  counter-increment: my-awesome-counter;
+  position: relative;
+  color: white;
+  margin: 20px 30px;
+  text-align: left;
+}
+.contact-us .info ol li::before{
+  content: counter(my-awesome-counter);
+  font-family: 'Source Sans Pro';
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  text-align: center;
+  left: -50px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  background-color: rgba(240, 240, 240, 0.5);
 }
