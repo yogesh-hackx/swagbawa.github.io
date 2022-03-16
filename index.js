@@ -1,19 +1,19 @@
 const header = document.getElementsByTagName("header")[0];
 const navbar = document.getElementsByClassName("navbar")[0];
+const nav = document.querySelector('nav');
+const heroSection = document.querySelector('.hero');
 window.onscroll = function () {
-  if (window.scrollY > 10 && window.scrollY < 530) {
-    header.style.backgroundColor = "black";
+  if (window.scrollY > 10 && window.scrollY < heroSection.scrollHeight - 48) {
+    header.style.backgroundColor = "#1C1E20";
+    nav.classList.remove('white')
     navbar.style.color = "white";
     header.style.boxShadow = "none";
-  } else if (window.scrollY > 530) {
+  } else if (window.scrollY > heroSection.scrollHeight - 48) {
     header.style.backgroundColor = "white";
+    nav.classList.add('white')
     navbar.style.color = "black";
     header.style.boxShadow =
       "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px";
-  } else {
-    header.style.backgroundColor = "transparent";
-    navbar.style.color = "white";
-    header.style.boxShadow = "none";
   }
 };
 
@@ -35,7 +35,7 @@ text_area.addEventListener("blur", function () {
 const particles = {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
-    color: { value: "#ffffff" },
+    color: { value: "#ccc" },
     shape: {
       type: "circle",
       stroke: { width: 0, color: "#000000" },
@@ -55,18 +55,18 @@ const particles = {
     line_linked: {
       enable: true,
       distance: 150,
-      color: "#ffffff",
+      color: "#c0c0c0",
       opacity: 0.4,
       width: 1,
     },
     move: {
       enable: true,
-      speed: 6,
+      speed: 0.5,
       direction: "none",
-      random: false,
+      random: true,
       straight: false,
       out_mode: "out",
-      bounce: false,
+      bounce: true,
       attract: { enable: false, rotateX: 600, rotateY: 1200 },
     },
   },
@@ -96,3 +96,4 @@ const particles = {
 };
 
 tsParticles.load("tsparticles", particles);
+new Pushbar({ overlay: true})

@@ -1,157 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
-  <title>PV Home</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo"><img src="./assets/PV_Logo.png" alt="logo" /></div>
-      <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Login In</a>
-        <a href="#">Get in Touch</a>
-      </div>
-    </nav>
-  </header>
-  <section class="hero">
-    <div class="sub-container">
-      <h1>Find Your Dream Job</h1>
-      <p>Explore our open roles and make your next move. </p>
-      <button>Rigister Now</button>
-    </div>
-  </section>
-  <section class="about-us-section">
-    <h1>About Us</h1>
-    <div>
-      <p>
-        We are specialized in building unique digital experiences for our clients - from _______ to special purpose applications. Our team 
-        consists of a bunch of committed professionals who have led some of the complex finance projects to its desired objectives. During 
-        the course of our careers at one of the big four accounting firms, we learned that implementation of any project is most challenging
-        and yet it receives limited focus from the management. Organizations struggle to successfully execute the project within the defined 
-        timelines.
-      </p>
-      <p>
-        We realized that there is a huge gap in the market between demand and supply of these services and we have the right mix of passion
-        expertise and self-belief that we can tremendously contribute to our customer’s businesses.
-      </p>
-      <p>
-        Therefore, we are here to offer you a one stop solution for all your finance and accounting related problems. Be it process automation
-        be it End-to-end Process Visibility, we can help you in a way or another.
-      </p>
-    </div>
-  </section>
-  <section class="services-section">
-    <div id="tsparticles"></div>
-    <div class="sub-container">
-      <h1>WHAT WE OFFER</h1>
-      <h2>SERVICES</h2>
-      <div class="services-list">
-        <div class="service-list-item">
-          <div class="image-container"><img src="./assets/29464321586787195.svg" alt="img" /></div>
-          <div>
-            <h2>Comp-Ally</h2>
-            <h3>Compliance Tracking Software</h3>
-            <p>Track Effortlessly or TrackTrouble-free or Create and Track Compliances</p>
-            <button>VIEW MORE</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <title>PV Home</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><img src="./assets/PV_Logo.png" alt="logo" /></div>
+        <ul class="navbar">
+          <li href="#">Home</li>
+          <li href="#">About</li>
+          <li href="#">Services</li>
+          <li href="#">Login In</li>
+          <li>Get in Touch</li>
+        </ul>
+        
+        <div class="hamburger-icon" data-pushbar-target="sidebar"><span></span><span></span><span></span></div>
+        
+        <div data-pushbar-id="sidebar" class="sidebar" data-pushbar-direction="left">
+          <div class="logo"><img src="./assets/PV_Logo.png" alt="logo" /></div>
+          <button data-pushbar-close class="close-button">
+            <span></span><span></span>
+          </button>
+
+          <ul class="sidebar-items">
+            <li href="#">Home</li>
+            <li href="#">About</li>
+            <li href="#">Services</li>
+            <li href="#">Login In</li>
+            <li>Get in Touch</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pushbar_main_content">
+      <section class="hero">
+        <div class="sub-container">
+          <h1 class="hero-heading">
+            <p class="tagline-small">WE CREATE</p>
+            <p class="tagline-main">Digital Experiences which you love</p>
+          </h1>
+          <button data-pushbar-target="sidebar">Get In Touch</button>
+        </div>
+        <img
+          src="./assets/hero-bottom-left.svg"
+          class="hero-bottom-left"
+          alt=""
+        />
+      </section>
+      <section class="about-us-section">
+        <h1>About Us</h1>
+        <div>
+          <p>
+            We are specialized in building unique digital experiences for our
+            clients - from _______ to special purpose applications. Our team
+            consists of a bunch of committed professionals who have led some of
+            the complex finance projects to its desired objectives. During the
+            course of our careers at one of the big four accounting firms, we
+            learned that implementation of any project is most challenging and
+            yet it receives limited focus from the management. Organizations
+            struggle to successfully execute the project within the defined
+            timelines.
+          </p>
+          <p>
+            We realized that there is a huge gap in the market between demand
+            and supply of these services and we have the right mix of passion
+            expertise and self-belief that we can tremendously contribute to our
+            customer’s businesses.
+          </p>
+          <p>
+            Therefore, we are here to offer you a one stop solution for all your
+            finance and accounting related problems. Be it process automation be
+            it End-to-end Process Visibility, we can help you in a way or
+            another.
+          </p>
+        </div>
+      </section>
+      <section class="services-section">
+        <div id="tsparticles"></div>
+        <div class="sub-container">
+          <h1>What We Offer</h1>
+          <div class="services-list">
+            <div class="service-list-item">
+              <div class="image-container">
+                <img src="./assets/29464321586787195.svg" alt="img" />
+              </div>
+              <div>
+                <h2>Comp-Ally</h2>
+                <h3>Compliance Tracking Software</h3>
+                <p>
+                  Track Effortlessly or TrackTrouble-free or Create and Track
+                  Compliances
+                </p>
+                <button>VIEW MORE</button>
+              </div>
+            </div>
+            <div class="service-list-item">
+              <div class="image-container">
+                <img
+                  src="./assets/digital-asset-management-2587366-2158846.svg"
+                  alt="img"
+                />
+              </div>
+              <div>
+                <h2>FAMS</h2>
+                <h3>Fixed Assets Management</h3>
+                <p>
+                  Fixed Asset Management Tool that lets you manage your asset
+                  the way you want
+                </p>
+                <button>VIEW MORE</button>
+              </div>
+            </div>
+            <div class="service-list-item">
+              <div class="image-container">
+                <img src="./assets/electronic-pay.svg" alt="img" />
+              </div>
+              <div>
+                <h2>P2P</h2>
+                <h3>Procure To Pay</h3>
+                <p>
+                  A tool which covers the lifecycle from Procure to Pay of a
+                  good/service
+                </p>
+                <button>VIEW MORE</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="service-list-item">
-          <div class="image-container"><img src="./assets/digital-asset-management-2587366-2158846.svg" alt="img" /></div>
-          <div>
-            <h2>FAMS</h2>
-            <h3>Fixed Assets Management</h3>
-            <p>Fixed Asset Management Tool that lets you manage your asset the way you want</p>
-            <button>VIEW MORE</button>
+      </section>
+      <section class="clients">
+        <h1>Our Clients</h1>
+        <div class="clients-list">
+          <div><img src="./assets/download (13) 1.png" alt="image" /></div>
+          <div><img src="./assets/karma-logo-new 1.png" alt="image" /></div>
+        </div>
+      </section>
+      <section class="contact-us">
+        <div class="sub-container">
+          <div class="form-container">
+            <h2>Contact Me</h2>
+            <form>
+              <div class="input-contain">
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  autocomplete="off"
+                  value=""
+                  aria-labelledby="placeholder-fname"
+                />
+                <label
+                  class="placeholder-text"
+                  for="fname"
+                  id="placeholder-fname"
+                >
+                  <div class="text">First Name*</div>
+                </label>
+              </div>
+              <div class="input-contain">
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  autocomplete="off"
+                  value=""
+                  aria-labelledby="placeholder-fname"
+                />
+                <label
+                  class="placeholder-text"
+                  for="fname"
+                  id="placeholder-fname"
+                >
+                  <div class="text">Last Name*</div>
+                </label>
+              </div>
+              <div class="input-contain">
+                <input
+                  type="email"
+                  id="fname"
+                  name="fname"
+                  autocomplete="off"
+                  value=""
+                  aria-labelledby="placeholder-fname"
+                />
+                <label
+                  class="placeholder-text"
+                  for="fname"
+                  id="placeholder-fname"
+                >
+                  <div class="text">Email Address*</div>
+                </label>
+              </div>
+              <div class="input-contain">
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  autocomplete="off"
+                  value=""
+                  aria-labelledby="placeholder-fname"
+                />
+                <label
+                  class="placeholder-text"
+                  for="fname"
+                  id="placeholder-fname"
+                >
+                  <div class="text">Contact Number*</div>
+                </label>
+              </div>
+              <div class="input-contain">
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  autocomplete="off"
+                  value=""
+                  aria-labelledby="placeholder-fname"
+                />
+                <label
+                  class="placeholder-text"
+                  for="fname"
+                  id="placeholder-fname"
+                >
+                  <div class="text">Company*</div>
+                </label>
+              </div>
+              <div class="form-group full text-area-contain">
+                <textarea
+                  maxlength="255"
+                  id="cancellationNotes"
+                  name="cancellationNotes"
+                ></textarea>
+                <label>How We Can Help You?</label>
+              </div>
+              <p>
+                By sending this form I confirm that I have read and accept
+                Intellectsoft <a href="#">Privacy Policy</a>
+              </p>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+          <div class="info">
+            <h1>What Happen Next?</h1>
+            <ol>
+              <li>
+                Our sales manager reaches you out within a few days after
+                analyzing your business requirements
+              </li>
+              <li>
+                Meanwhile, we sign an NDA to ensure the highest privacy level
+              </li>
+              <li>
+                Our pre-sale manager presents project estimates and approximate
+                timeline
+              </li>
+            </ol>
           </div>
         </div>
-        <div class="service-list-item">
-          <div class="image-container" ><img src="./assets/electronic-pay.svg" alt="img" /></div>
-          <div>
-            <h2>P2P</h2>
-            <h3>Procure To Pay</h3>
-            <p> A tool which covers the lifecycle from Procure to
-              Pay of a good/service</p>
-            <button>VIEW MORE</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="clients">
-    <h1>OUR CLIENTS</h1>
-    <div class="clients-list">
-      <div><img src="./assets/download (13) 1.png" alt="image" /></div>
-      <div><img src="./assets/karma-logo-new 1.png" alt="image" /></div>
-    </div>
-  </section>
-  <section class="contact-us">
-    <div class="sub-container">
-      <div class="form-container">
-        <h2>Contact Me</h2>
-        <form>
-          <div class="input-contain">
-            <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
-            <label class="placeholder-text" for="fname" id="placeholder-fname">
-                <div class="text">First Name*</div>
-            </label>
-          </div>
-          <div class="input-contain">
-            <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
-            <label class="placeholder-text" for="fname" id="placeholder-fname">
-                <div class="text">Last Name*</div>
-            </label>
-          </div>
-          <div class="input-contain">
-            <input type="email" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
-            <label class="placeholder-text" for="fname" id="placeholder-fname">
-                <div class="text">Email Address*</div>
-            </label>
-          </div>
-          <div class="input-contain">
-            <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
-            <label class="placeholder-text" for="fname" id="placeholder-fname">
-                <div class="text">Contact Number*</div>
-            </label>
-          </div>
-          <div class="input-contain">
-            <input type="text" id="fname" name="fname" autocomplete="off" value="" aria-labelledby="placeholder-fname">
-            <label class="placeholder-text" for="fname" id="placeholder-fname">
-                <div class="text">Company*</div>
-            </label>
-          </div>
-          <div class="form-group full text-area-contain">
-            <textarea maxlength="255" id="cancellationNotes"name="cancellationNotes"></textarea>
-            <label>How We Can Help You?</label>
-          </div>
-          <p>By sending this form I confirm that I have read and accept Intellectsoft <a href="#">Privacy Policy</a></p>
-          <button type="submit">SEND</button>
-        </form>
-      </div>
-      <div class="info">
-        <h1>What Happen Next?</h1>
-        <ol>
-          <li>Our sales manager reaches you out within a few days after analyzing your business requirements</li>
-          <li>Meanwhile, we sign an NDA to ensure the highest privacy level</li>
-          <li>Our pre-sale manager presents project estimates and approximate timeline</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-</body>
-<script
+      </section>
+    </main>
+  </body>
+  <script
     src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
     integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
     crossorigin="anonymous"
