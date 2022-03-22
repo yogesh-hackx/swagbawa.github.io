@@ -16,27 +16,32 @@
     <header>
       <nav>
         <div class="logo"><img src="./assets/PV_Logo.png" alt="logo" /></div>
-        <ul class="navbar">
-          <li href="#">Home</li>
-          <li href="#">About</li>
-          <li href="#">Services</li>
-          <li href="#">Login In</li>
+        <ul class="navbar" style="color: white;">
+          <li href="#">Solutions</li>
+          <li href="#">About Us</li>
+          <li href="#">Careers</li>
           <li>Get in Touch</li>
         </ul>
-        
-        <div class="hamburger-icon" data-pushbar-target="sidebar"><span></span><span></span><span></span></div>
-        
-        <div data-pushbar-id="sidebar" class="sidebar" data-pushbar-direction="left">
+
+        <div class="hamburger-icon" data-pushbar-target="sidebar">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div
+          data-pushbar-id="sidebar"
+          class="sidebar"
+          data-pushbar-direction="left"
+        >
           <div class="logo"><img src="./assets/PV_Logo.png" alt="logo" /></div>
-          <button data-pushbar-close class="close-button">
+          <!-- <button data-pushbar-close class="close-button">
             <span></span><span></span>
-          </button>
+          </button> -->
+          <button data-pushbar-close class="close-button"></button>
 
           <ul class="sidebar-items">
-            <li href="#">Home</li>
-            <li href="#">About</li>
-            <li href="#">Services</li>
-            <li href="#">Login In</li>
+            <li href="#">Solutions</li>
+            <li href="#">About Us</li>
+            <li href="#">Careers</li>
             <li>Get in Touch</li>
           </ul>
         </div>
@@ -47,10 +52,13 @@
       <section class="hero">
         <div class="sub-container">
           <h1 class="hero-heading">
-            <p class="tagline-small">WE CREATE</p>
-            <p class="tagline-main">Digital Experiences which you love</p>
+            <p class="tagline-main">
+              Your<br />
+              <span class="tagline-highlight">Digital Transformation</span>
+              Partner
+            </p>
           </h1>
-          <button data-pushbar-target="sidebar">Get In Touch</button>
+          <button>Get In Touch</button>
         </div>
         <img
           src="./assets/hero-bottom-left.svg"
@@ -58,54 +66,25 @@
           alt=""
         />
       </section>
-      <section class="about-us-section">
-        <h1>About Us</h1>
-        <div>
-          <p>
-            We are specialized in building unique digital experiences for our
-            clients - from _______ to special purpose applications. Our team
-            consists of a bunch of committed professionals who have led some of
-            the complex finance projects to its desired objectives. During the
-            course of our careers at one of the big four accounting firms, we
-            learned that implementation of any project is most challenging and
-            yet it receives limited focus from the management. Organizations
-            struggle to successfully execute the project within the defined
-            timelines.
-          </p>
-          <p>
-            We realized that there is a huge gap in the market between demand
-            and supply of these services and we have the right mix of passion
-            expertise and self-belief that we can tremendously contribute to our
-            customer’s businesses.
-          </p>
-          <p>
-            Therefore, we are here to offer you a one stop solution for all your
-            finance and accounting related problems. Be it process automation be
-            it End-to-end Process Visibility, we can help you in a way or
-            another.
-          </p>
-        </div>
-      </section>
       <section class="services-section">
         <div id="tsparticles"></div>
         <div class="sub-container">
           <h1>What We Offer</h1>
           <div class="services-list">
-            <div class="service-list-item">
+            <a href="/comp-ally/index.html" class="service-list-item">
               <div class="image-container">
                 <img src="./assets/29464321586787195.svg" alt="img" />
               </div>
               <div>
                 <h2>Comp-Ally</h2>
-                <h3>Compliance Tracking Software</h3>
+                <!-- <h3>Compliance Tracking Software</h3> -->
                 <p>
-                  Track Effortlessly or TrackTrouble-free or Create and Track
-                  Compliances
+                  Your ally to help you stay ahead of your compliances 
                 </p>
                 <button>VIEW MORE</button>
               </div>
-            </div>
-            <div class="service-list-item">
+            </a>
+            <a href="#" class="service-list-item">
               <div class="image-container">
                 <img
                   src="./assets/digital-asset-management-2587366-2158846.svg"
@@ -113,30 +92,99 @@
                 />
               </div>
               <div>
-                <h2>FAMS</h2>
-                <h3>Fixed Assets Management</h3>
+                <h2>Assets</h2>
+                <!-- <h3>Fixed Assets Management</h3> -->
                 <p>
-                  Fixed Asset Management Tool that lets you manage your asset
-                  the way you want
+                  Fixed Asset Management, Simplified!
                 </p>
                 <button>VIEW MORE</button>
               </div>
-            </div>
-            <div class="service-list-item">
+            </a>
+            <a href="#" class="service-list-item">
               <div class="image-container">
                 <img src="./assets/electronic-pay.svg" alt="img" />
               </div>
               <div>
                 <h2>P2P</h2>
-                <h3>Procure To Pay</h3>
+                <!-- <h3>Procure To Pay</h3> -->
                 <p>
-                  A tool which covers the lifecycle from Procure to Pay of a
-                  good/service
+                  Seamlessly manage procure to pay lifecycle 
                 </p>
                 <button>VIEW MORE</button>
               </div>
-            </div>
+            </a>
+            <a href="#" class="service-list-item">
+              <div class="image-container">
+                <img src="./assets/electronic-pay.svg" alt="img" />
+              </div>
+              <div>
+                <h2>Dashboards</h2>
+                <!-- <h3>Procure To Pay</h3> -->
+                <p>
+                  Create powerful visually appealing business intelligence dashboards 
+                </p>
+                <button>VIEW MORE</button>
+              </div>
+            </a>
+            <a href="#" class="service-list-item">
+              <div class="image-container">
+                <img src="./assets/electronic-pay.svg" alt="img" />
+              </div>
+              <div>
+                <h2>Recon</h2>
+                <!-- <h3>Procure To Pay</h3> -->
+                <p>
+                  Reconciliations, made easy! 
+                </p>
+                <button>VIEW MORE</button>
+              </div>
+            </a>
+            <a href="#" class="service-list-item">
+              <div class="image-container">
+                <img src="./assets/electronic-pay.svg" alt="img" />
+              </div>
+              <div>
+                <h2>Tasks</h2>
+                <!-- <h3>Procure To Pay</h3> -->
+                <p>
+                  Be proactive, stay a step ahead of your tasks… 
+                </p>
+                <button>VIEW MORE</button>
+              </div>
+            </a>
+            <a href="#" class="service-list-item">
+              <div class="image-container">
+                <img src="./assets/electronic-pay.svg" alt="img" />
+              </div>
+              <div>
+                <h2>Customized Solutions</h2>
+                <!-- <h3>Procure To Pay</h3> -->
+                <p>
+                  A customized IT solution to suit your business needs
+                </p>
+                <button>VIEW MORE</button>
+              </div>
+            </a>
           </div>
+        </div>
+      </section>
+      <section class="about-us-section">
+        <h1>About Us</h1>
+        <div>
+          <p>
+            We are a technology firm offering host of IT solutions catering to
+            various business processes including finance & accounts,
+            procurement, HR, and other operations.
+          </p>
+          <p>
+            The core team of PV comes with rich and diverse background with over
+            2 decades of expertise in leading large change management and
+            finance transformation projects. Our key differentiator is our
+            unmatched understanding of the business processes and our
+            implementation capabilities. It is during the implementation stage
+            that most projects fail. We take ownership of implementing solutions
+            and achieving desired results.
+          </p>
         </div>
       </section>
       <section class="clients">
