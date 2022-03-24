@@ -107,9 +107,11 @@ header nav .navbar a:hover{
 
 section.hero {
   background: linear-gradient(rgba(0,0,0, 0.4), rgba(0, 0, 0, 0.4) 80%, rgba(0,0,0, 0.4)), url('/comp-ally/assets/hero-compally.png');
-  background-image: url('/comp-ally/assets/hero-compally.png');
+  background-image: url('/asset/assets/hero-assets.png');
   object-fit: cover;
   object-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero{
@@ -343,6 +345,11 @@ section.hero {
   .services-section .services-list{
     grid-template-columns:  repeat(1, 1fr);
     margin: 10px auto;
+  }
+  .section-3 .list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 50px;
   }
 }
 
@@ -703,7 +710,8 @@ section.hero {
   font-size: 1.8rem;
   font-family: "Inter", sans-serif;
   margin-top: 12px;
-  line-height: 144%;
+  line-height: 122%;
+  letter-spacing: -0.03rem;
 }
 .section-3{
   margin-top: 30px;
@@ -728,7 +736,7 @@ section.hero {
 }
 .section-3 .list{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding-bottom: 50px;
 }
 .section-3 .list > div{
@@ -738,15 +746,18 @@ section.hero {
 .section-3 .list .list-item{
   margin: 20px;
   padding: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
 }
 .section-3 .list .list-image{
   width: 70px;
+  transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .section-3 .list .list-item:hover{
   background-color: #dddcdc;
 }
 .section-3 .list .list-item:hover .list-image{
-  filter: invert(55%) sepia(1) saturate(55) hue-rotate(175deg);
+  /* filter: invert(55%) sepia(1) saturate(55) hue-rotate(175deg); */
 }
 .section-3 .list p{
   font-family: Poppins;
@@ -1038,7 +1049,7 @@ section.hero {
 }
 @media screen and (max-width: 755px) {
   .section-3 .list{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 1148px) {
@@ -1144,4 +1155,12 @@ section.hero {
     height: auto;
     width: 80%;
   }
+}
+
+.section-3 .bold {
+  font-size: 1.2rem;
+  color: #626262;
+}
+.bold {
+  font-weight: 700;
 }

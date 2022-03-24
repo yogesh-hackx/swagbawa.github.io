@@ -694,7 +694,8 @@ header nav .navbar a:hover{
   font-size: 1.8rem;
   font-family: "Inter", sans-serif;
   margin-top: 12px;
-  line-height: 144%;
+  line-height: 122%;
+  letter-spacing: -0.03rem;
 }
 .section-3{
   margin-top: 30px;
