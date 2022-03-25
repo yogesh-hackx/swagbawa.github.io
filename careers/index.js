@@ -18,20 +18,7 @@ window.onscroll = function () {
 };
 
 let input_elements = document.querySelectorAll("input");
-let text_area = document.querySelector("textarea");
-input_elements.forEach((input_ele) => {
-  input_ele.addEventListener("keyup", () => {
-    input_ele.setAttribute("value", input_ele.value);
-  });
-});
 
-text_area.addEventListener("blur", function () {
-  if (text_area.value !== "" && !text_area.classList.contains("not-empty")) {
-    text_area.classList.add("not-empty");
-  } else if (text_area.value === "") {
-    text_area.classList.remove("not-empty");
-  }
-});
 const particles = {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -95,5 +82,5 @@ const particles = {
   },
 };
 
-tsParticles.load("what-we-offer", particles);
+tsParticles.load("tsparticles", particles);
 new Pushbar({ overlay: true})

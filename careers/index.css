@@ -42,10 +42,16 @@ header nav{
 header nav .logo img{
   height: 42px;
 }
-
 header nav .navbar li{
   color: white;
   cursor: pointer;
+}
+nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+nav.white li a {
+  color: black;
 }
 
 nav .navbar {
@@ -91,17 +97,24 @@ header nav .navbar li{
   font-size: 1.1rem;
   color: inherit;
 }
-nav li a {
-  text-decoration: none;
-  color: inherit;
+header nav .navbar a:last-child{
+  color: #DD3B42;
+  border: 1px solid gray;
+  padding: 10px;
+  margin-right: 20px;
 }
-nav.white li a {
-  color: black;
+header nav .navbar a:last-child:hover{
+  color: white;
+  background-color: #DD3B42;
+  border-color: #DD3B42;
+}
+header nav .navbar a:hover{
+  color: #DD3B42;
 }
 .hero{
   height: 75vh;
-  /* background: linear-gradient(rgba(0,0,0, 0.9), rgba(255, 255, 255, 0.1) 80%, rgba(0,0,0, 0.5)), url('./assets/peakpx.jpg'); */
-  background-color: #1C1E20;
+  background-image: url('/img/hero-career.webp');
+  /* background-color: #1C1E20; */
   background-size:  cover;
   background-repeat: no-repeat;
   /* padding-left: 16px;
@@ -116,24 +129,38 @@ nav.white li a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   margin: auto;
 }
 .hero .sub-container h1{
   color: white;
 }
+.hero-heading {
+  font-weight: 900;
+  text-align: center;
+}
+
 .hero .tagline-main {
   margin: 0 0;
   font-size: 6rem;
+  font-weight: 900;
   line-height: 100px;
+  text-align: center;
 }
 .hero .sub-container .tagline-highlight{
   color: #ff9499;
+}
+.hero h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
 }
 .hero .sub-container button{
   border: none;
   outline: none;
   padding: 14px 28px;
   background-color: #DD3B42;
+  margin: auto;
   border-radius: 2px;
   color: white;
   font-weight: 500;
@@ -173,6 +200,9 @@ nav.white li a {
   }
   .hero .sub-container .tagline-highlight{
     font-size: 2.8rem;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -1132,6 +1162,42 @@ nav.white li a {
   }
 }
 
-.sidebar-items li a {
-  color: #DD3B42;
+section.careers-text {
+  max-width: 1200px;
+  padding: 16px;
+  margin: auto;
+}
+section.careers-text p {
+  margin: 24px 0;
+  font-size: 21px;
+  line-height: 36px;
+}
+section.careers-text p a {
+  color: #9F0202;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #323232;
+  color: white;
+  padding: 48px 16px;
+}
+
+footer .content {
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: auto;
+}
+footer .logo {
+  height: 64px;
+}
+
+@media screen and (max-width: 700px) {
+  footer .content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
