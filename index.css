@@ -1135,3 +1135,40 @@ nav.white li a {
 .sidebar-items li a {
   color: #DD3B42;
 }
+
+footer {
+  background-color: #323232;
+  color: white;
+  padding: 48px 16px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .content {
+  max-width: 1300px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+footer .col1 {
+  max-width: 500px;
+}
+footer .col2 .address p {
+  margin: 0 0;
+}
+footer .logo {
+  height: 64px;
+}
+
+@media screen and (max-width: 700px) {
+  footer .content {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

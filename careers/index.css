@@ -97,20 +97,6 @@ header nav .navbar li{
   font-size: 1.1rem;
   color: inherit;
 }
-header nav .navbar a:last-child{
-  color: #DD3B42;
-  border: 1px solid gray;
-  padding: 10px;
-  margin-right: 20px;
-}
-header nav .navbar a:last-child:hover{
-  color: white;
-  background-color: #DD3B42;
-  border-color: #DD3B42;
-}
-header nav .navbar a:hover{
-  color: #DD3B42;
-}
 .hero{
   height: 75vh;
   background-image: url('/img/hero-career.webp');
@@ -1183,13 +1169,26 @@ footer {
   color: white;
   padding: 48px 16px;
 }
+footer a {
+  text-decoration: none;
+  color: white;
+}
 
 footer .content {
   max-width: 1300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
   gap: 24px;
+  justify-content: space-between;
   margin: auto;
+}
+
+footer .col1 {
+  max-width: 500px;
+}
+footer .col2 .address p {
+  margin: 0 0;
 }
 footer .logo {
   height: 64px;
@@ -1197,7 +1196,7 @@ footer .logo {
 
 @media screen and (max-width: 700px) {
   footer .content {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 24px;
   }
 }

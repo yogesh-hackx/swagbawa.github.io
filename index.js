@@ -97,3 +97,16 @@ const particles = {
 
 tsParticles.load("what-we-offer", particles);
 new Pushbar({ overlay: true})
+
+const sideBarItems = document.querySelectorAll(".sidebar-items li")
+const closeButton = document.querySelector("button.close-button")
+
+sideBarItems.forEach(sideBarItem => {
+  console.log(sideBarItem)
+  sideBarItem.addEventListener('click', (e) => {
+    console.log(e.target?.attributes?.href?.value)
+    console.log(e.target)
+    window.url = "/" + e.target?.attributes?.href?.value
+    closeButton.click()
+  })
+})

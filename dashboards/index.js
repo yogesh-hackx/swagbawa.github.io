@@ -13,25 +13,12 @@ window.onscroll = function () {
     nav.classList.add('white')
     navbar.style.color = "black";
     header.style.boxShadow =
-      "rgb(0 0 0 / 0%) 0px 3px 6px, rgb(0 0 0 / 4%) 0px 3px 6px";
+      "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px";
   }
 };
 
-// let input_elements = document.querySelectorAll("input");
-// let text_area = document.querySelector("textarea");
-// input_elements.forEach((input_ele) => {
-//   input_ele.addEventListener("keyup", () => {
-//     input_ele.setAttribute("value", input_ele.value);
-//   });
-// });
+let input_elements = document.querySelectorAll("input");
 
-// text_area.addEventListener("blur", function () {
-//   if (text_area.value !== "" && !text_area.classList.contains("not-empty")) {
-//     text_area.classList.add("not-empty");
-//   } else if (text_area.value === "") {
-//     text_area.classList.remove("not-empty");
-//   }
-// });
 const particles = {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -97,16 +84,3 @@ const particles = {
 
 tsParticles.load("tsparticles", particles);
 new Pushbar({ overlay: true})
-
-const sideBarItems = document.querySelectorAll(".sidebar-items li")
-const closeButton = document.querySelector("button.close-button")
-
-sideBarItems.forEach(sideBarItem => {
-  console.log(sideBarItem)
-  sideBarItem.addEventListener('click', (e) => {
-    console.log(e.target?.attributes?.href?.value)
-    console.log(e.target)
-    window.url = "/" + e.target?.attributes?.href?.value
-    closeButton.click()
-  })
-})

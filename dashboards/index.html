@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dashboards/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <title>PV Home</title>
+  </head>
+  <body>
+    <header style="background-color: rgb(28, 30, 32); box-shadow: none">
+      <nav>
+        <div class="logo">
+          <a href="/"><img src="/assets/logo-pvhub.svg" alt="logo" /></a>
+        </div>
+        <ul class="navbar" style="color: white">
+          <li href="#"><a href="#what-we-offer">Solutions</a></li>
+          <li href="/#about-us"><a href="/#about-us">About Us</a></li>
+          <li href="/careers"><a href="/careers"> Careers </a></li>
+          <li href="#"><a href="#get-in-touch">Get in Touch</a></li>
+        </ul>
+
+        <div class="hamburger-icon" data-pushbar-target="sidebar">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div
+          data-pushbar-id="sidebar"
+          class="sidebar"
+          data-pushbar-direction="left"
+        >
+          <div class="logo" style="text-align: center">
+            <img src="/assets/logo-pvhub.svg" alt="logo" />
+          </div>
+          <!-- <button data-pushbar-close class="close-button">
+            <span></span><span></span>
+          </button> -->
+          <button data-pushbar-close class="close-button"></button>
+
+          <ul class="sidebar-items">
+            <li href="#">Solutions</li>
+            <li href="#">About Us</li>
+            <li href="#">Careers</li>
+            <li>Get in Touch</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pushbar_main_content">
+      <section class="hero">
+        <div class="sub-container">
+          <h1 class="hero-heading">
+            <p class="tagline-main">
+              Create powerful visually appealing
+              <span class="tagline-highlight"
+                >business intelligence dashboards</span
+              >
+            </p>
+          </h1>
+        </div>
+        <img
+          src="./assets/hero-bottom-left.svg"
+          class="hero-bottom-left"
+          alt=""
+        />
+      </section>
+
+      <section class="section-2">
+        <div class="section-2-left">
+          <img src="/assets/dashboardsMockup.webp" alt="img" />
+        </div>
+        <div class="section-2-right">
+          <div class="heading">
+            <h1>What is it?</h1>
+          </div>
+          <p>
+            Manually identifying patterns in data is like looking for a needle
+            in a haystack. Often the data is large and complex and interpreting
+            it the right way becomes an enormous task.
+          </p>
+          <p>
+            Data analytics doesn't have to always involve complex numbers or
+            math. It can also be as simple as charts and graphs. Dashboards let
+            you create at-a-glance view of key performance indicators (KPIs)
+            related to a particular objective or process.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-3">
+        <div>
+          <div class="heading">
+            <h1>Features</h1>
+          </div>
+          <div class="list">
+            <div class="list-item">
+              <img
+                src="/assets/dataConn.svg"
+                alt="loag"
+                class="list-image"
+              />
+              <p class="bold">Data Connections</p>
+              <p>Connect your Dashboards with your existing data sources, including Excel spreadsheets,
+                Text/CSV files, multiple cloud applications and many more.</p>
+            </div>
+            <div class="list-item">
+              <img
+                src="/assets/filter.svg"
+                alt="logo"
+                class="list-image"
+              />
+              <p class="bold">Dashboard Chart Filters</p>
+              <p>Explore your data to get a better insight on a click of button.</p>
+            </div>
+            <div class="list-item">
+              <img src="/assets/drilldown.svg" alt="logo" class="list-image" />
+              <p class="bold">Drilldown Options</p>
+              <p>Provide you with a configurable interactive dashboard that shows additional, detailed
+                information about a particular element or variable without overcrowding the dashboard</p>
+            </div>
+            <div class="list-item">
+              <img src="/assets/predict.svg" alt="logo" class="list-image" />
+              <p class="bold">Predictive Analysis</p>
+              <p>With predictive analytics, you can use your data to recognize trends, predict future events,
+                and identify business risks and opportunities. This method simply involves using a forecast
+                engine that allows you to run predictions based on past data.</p>
+            </div>
+            <div class="list-item">
+              <img
+                src="/assets/widget.svg"
+                alt="logo"
+                class="list-image"
+              />
+              <p class="bold">Widgets</p>
+              <p>Adding widgets to your dashboards can make them more interactive.</p>
+            </div>
+            <div class="list-item">
+              <img src="/assets/tooltip.svg" alt="logo" class="list-image" />
+              <p class="bold">Chart Tooltips</p>
+              <p>Allows you to adjust the displayed information when you hover over with the mouse,
+                providing a small block of information.</p>
+            </div>
+            <div class="list-item">
+              <img src="/assets/mobile.svg" alt="logo" class="list-image" />
+              <p class="bold">Mobile Friendly Dashboards</p>
+              <p>View your dashboards on your mobile anytime, anywhere</p>
+            </div>
+            <div class="list-item">
+              <img src="/assets/dataSecurity.svg" alt="logo" class="list-image" />
+              <p class="bold">Data Security</p>
+              <p>Our dashboard provides you an inbuilt security for data. You can also control the access, edit
+                and view rights with the help of role-based permissions.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="engage-banner">
+        <div class="content">
+          <div class="left">
+            <p class="heading">
+              Do you spend a lot of time sifting through Excel spreadsheets and databases for reporting
+              purposes?
+            </p>
+            <p class="sub-heading">Take a look at our dummy interactive dashboard and see how it can help you in spending
+              less time on analysis and making informed decision.</p>
+          </div>
+          <div class="right">
+            <a href="https://f-b-demo.vercel.app/" target="_blank">
+              <button>Get Demo</button>
+            </a>
+          </div>
+        </div>
+
+
+      </section>
+    </main>
+    <footer>
+      <div class="content">
+        <div class="col1">
+          <img src="/assets/logo-pvhub.svg" class="logo" alt="" />
+          <h2>Panchavaktra Fintech LLP</h2>
+          <p>
+            We are a professional services firm specializing in implementation
+            of large change initiatives with expertise of over 2 decades in
+            leading such change for large organizations.
+          </p>
+          <p>Stay Connected</p>
+        </div>
+        <div class="col2">
+          <h2>Contact Us at:</h2>
+          <div class="address">
+            <p>B-115, Shushant Vyapar Kendra,</p>
+            <p>Shushant Lok, Phase-I,</p>
+            <p>Gurgaon - 122 002,</p>
+            <p>Haryana,</p>
+            <p>India</p>
+          </div>
+
+          <p><b>Mobile: </b><a href="tel:+919741916444">+91 9741916444</a></p>
+          <p><b>Email: </b><a href="mailto:info@pvadvisory.in">info@pvadvisory.in</a></p>
+          <p><b>Visit us: </b><a href="https://thepvhub.com">www.thepvhub.com</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
+    integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
+</html>
